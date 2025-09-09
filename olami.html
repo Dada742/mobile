@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Olamix Website</title>
+  <style>
+    /* Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    .main {
+      width: 100%;
+      background: linear-gradient(to top, rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%), url(1.jpg);
+      background-position: center;
+      background-size: cover;
+      min-height: 100vh;
+      color: #fff;
+    }
+
+    /* Navbar */
+    .navbar {
+      max-width: 1200px;
+      width: 100%;
+      margin: auto;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .logo {
+      color: #ff7200;
+      font-size: 35px;
+      font-weight: bold;
+    }
+
+    .menu ul {
+      display: flex;
+      flex-wrap: wrap;
+      list-style: none;
+      gap: 20px;
+    }
+
+    .menu ul li a {
+      text-decoration: none;
+      color: #fff;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .menu ul li a:hover {
+      color: #ff7200;
+    }
+
+    .search {
+      display: flex;
+      margin-top: 10px;
+    }
+
+    .srch {
+      width: 190px;
+      height: 30px;
+      background: transparent;
+      border: 1px solid #ff7200;
+      border-right: none;
+      color: white;
+      padding: 5px;
+      border-radius: 5px 0 0 5px;
+    }
+
+    .btn {
+      width: 100px;
+      height: 30px;
+      background: #ff7200;
+      border: 2px solid #ff7200;
+      color: #fff;
+      font-size: 15px;
+      border-radius: 0 5px 5px 0;
+      cursor: pointer;
+    }
+
+    .content {
+      max-width: 1200px;
+      margin: auto;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .content h1 {
+      font-size: 50px;
+      margin: 20px 0;
+    }
+
+    .content span {
+      color: #ff7200;
+      font-size: 60px;
+    }
+
+    .content .par {
+      font-size: 18px;
+      line-height: 28px;
+      margin-bottom: 20px;
+    }
+
+    .content .cn {
+      width: 160px;
+      height: 40px;
+      background: #ff7200;
+      border: none;
+      margin-bottom: 20px;
+      font-size: 18px;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+
+    .content .cn a {
+      text-decoration: none;
+      color: #000;
+      font-weight: bold;
+    }
+
+    /* Form box */
+    .form {
+      width: 90%;
+      max-width: 350px;
+      background: linear-gradient(to top, rgba(0,0,0,0.8)50%,rgba(0,0,0,0.8)50%);
+      margin: 20px auto;
+      border-radius: 10px;
+      padding: 25px;
+      text-align: center;
+    }
+
+    .form h2 {
+      color: #ff7200;
+      font-size: 22px;
+      background: #fff;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      padding: 8px;
+    }
+
+    .form input {
+      width: 100%;
+      height: 35px;
+      background: transparent;
+      border: none;
+      border-bottom: 1px solid #ff7200;
+      color: #fff;
+      font-size: 15px;
+      margin-top: 20px;
+      padding: 5px;
+    }
+
+    .form input::placeholder {
+      color: #fff;
+    }
+
+    .btnn {
+      width: 100%;
+      height: 40px;
+      background: #ff7200;
+      border: none;
+      margin-top: 30px;
+      font-size: 18px;
+      border-radius: 10px;
+      cursor: pointer;
+      color: #fff;
+      transition: 0.3s;
+    }
+
+    .btnn:hover {
+      background: #fff;
+      color: #ff7200;
+    }
+
+    .form .link {
+      font-size: 16px;
+      margin-top: 15px;
+    }
+
+    .form .link a {
+      color: #ff7200;
+      text-decoration: none;
+    }
+
+    .liw {
+      margin-top: 15px;
+    }
+
+    .icons a {
+      color: #fff;
+      font-size: 28px;
+      margin: 0 8px;
+      transition: 0.3s;
+    }
+
+    .icons a:hover {
+      color: #ff7200;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .content h1 {
+        font-size: 32px;
+      }
+      .content span {
+        font-size: 40px;
+      }
+      .content .par {
+        font-size: 16px;
+        line-height: 24px;
+      }
+      .menu ul {
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 10px;
+      }
+      .search {
+        width: 100%;
+        justify-content: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="main">
+    <div class="navbar">
+      <h2 class="logo">Olamix</h2>
+      <div class="menu">
+        <ul>
+          <li><a href="#">HOME</a></li>
+          <li><a href="#">ABOUT</a></li>
+          <li><a href="#">SERVICE</a></li>
+          <li><a href="#">DESIGN</a></li>
+          <li><a href="#">CONTACT</a></li>
+        </ul>
+      </div>
+      <div class="search">
+        <input class="srch" type="search" placeholder="Type to text">
+        <button class="btn">Search</button>
+      </div>
+    </div>
+
+    <div class="content">
+      <h1>Web Design & <br><span>Development</span><br>Course</h1>
+      <p class="par">
+        A web page is a document on the World Wide Web<br>
+        which is usually written in languages like HTML and accessed<br>
+        through a web browser using a Uniform Resource Location (URL).
+      </p>
+      <button class="cn"><a href="#">JOIN US</a></button>
+
+      <div class="form">
+        <h2>Login here</h2>
+        <input type="email" placeholder="Enter Email here">
+        <input type="password" placeholder="Enter Password here">
+        <button class="btnn">Login</button>
+
+        <p class="link">Don't have an account?<br>
+          <a href="#">Sign up here</a>
+        </p>
+        <p class="liw">Log in with</p>
+
+        <div class="icons">
+          <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+          <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+          <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+          <a href="#"><ion-icon name="logo-whatsapp"></ion-icon></a>
+          <a href="#"><ion-icon name="logo-google"></ion-icon></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Ionicons -->
+  <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+</body>
+</html>
